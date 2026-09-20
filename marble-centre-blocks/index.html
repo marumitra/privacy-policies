@@ -18,7 +18,7 @@
 <body>
 
 <h1>Privacy Policy — Marble Centre Blocks</h1>
-<p class="updated">Effective date: 26 August 2026</p>
+<p class="updated">Effective date: 1 September 2026</p>
 
 <p>
 Marble Centre Blocks ("the App") is an internal operations tool built for
@@ -37,7 +37,8 @@ Marble Centre. There is no public sign-up.
 
 <p><strong>Account information</strong> — provided by Marble Centre when a staff account is created:</p>
 <ul>
-  <li>Username and password (stored securely; passwords are never stored in plain text)</li>
+  <li>Email address and password (stored securely by our authentication provider; passwords are
+      never stored in plain text or visible to us)</li>
   <li>Display name and role (e.g. supervisor, admin)</li>
 </ul>
 
@@ -56,6 +57,14 @@ This data belongs to Marble Centre's business operations — it is not collected
 analytics profiling, or any purpose unrelated to running the business.
 </p>
 
+<p><strong>Diagnostic and app-performance data</strong> — collected automatically:</p>
+<ul>
+  <li>Crash reports and error logs, to help us find and fix bugs (via Firebase Crashlytics)</li>
+  <li>Basic app usage/diagnostic data such as device model, OS version, and app version (via Firebase
+      Analytics and Crashlytics) — used only to understand app stability and performance, never for
+      advertising or sold/shared with any advertiser</li>
+</ul>
+
 <h2>Permissions the App Requests</h2>
 <ul>
   <li><strong>Camera</strong> — to photograph blocks, slabs, and packing lists at each stage.</li>
@@ -65,11 +74,10 @@ analytics profiling, or any purpose unrelated to running the business.
 
 <h2>How Data Is Stored</h2>
 <p>
-App data is stored using <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>,
-a database and storage infrastructure provider, hosted in the <strong>ap-south-1 (Mumbai)</strong>
-region. Photos are stored in a private storage bucket and are only ever made accessible through
-short-lived, signed links generated at the moment they're needed — they are not publicly listed or
-browsable.
+App data is stored using <a href="https://firebase.google.com" target="_blank" rel="noopener">Firebase</a>
+(Google Cloud), hosted in the <strong>asia-south1 (Mumbai)</strong> region. Photos and documents are
+stored in a private storage bucket and are only ever made accessible to signed-in staff — they are not
+publicly listed or browsable.
 </p>
 
 <h2>Data Sharing</h2>
@@ -78,10 +86,12 @@ We do not sell, rent, or share this data with third parties for advertising or m
 Data is shared only with:
 </p>
 <ul>
-  <li><strong>Supabase</strong> (our infrastructure provider), solely to store and serve the data
-      described above.</li>
+  <li><strong>Firebase / Google Cloud</strong> (our infrastructure provider), solely to store and
+      serve the data described above, and to provide crash reporting and basic diagnostic data via
+      Firebase Crashlytics and Firebase Analytics.</li>
 </ul>
-<p>The App does not currently use any advertising or analytics SDKs.</p>
+<p>The App does not use advertising SDKs, and does not use analytics for advertising, profiling, or
+tracking across other apps or websites.</p>
 
 <h2>Data Retention &amp; Deletion</h2>
 <p>
